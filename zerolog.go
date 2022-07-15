@@ -1,3 +1,7 @@
+// Copyright 2022 wgentry22. All rights reserved.
+// Use of this source code is governed by a MIT-style
+// license that can be found in the LICENSE file.
+
 package golog
 
 import (
@@ -10,7 +14,7 @@ const (
   defaultZerologLevel = zerolog.InfoLevel
 )
 
-func NewZerologLogger(config Config) Interface {
+func newZerologLogger(config Config) Interface {
   l := parseZerologLevel(config)
 
   writer, err := config.getOutputsWriter()

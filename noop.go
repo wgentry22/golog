@@ -1,6 +1,10 @@
+// Copyright 2022 wgentry22. All rights reserved.
+// Use of this source code is governed by a MIT-style
+// license that can be found in the LICENSE file.
+
 package golog
 
-func NewNoopLogger(config Config) Interface {
+func newNoopLogger(config Config) Interface {
   return &noopLogger{}
 }
 
